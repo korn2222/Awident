@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM node:18-alpine as builder
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
@@ -10,6 +10,9 @@ RUN npm install
 # Copy source code and build
 COPY . .
 RUN npm run build
+
+# Ensure script.js is in dist (fallback if Vite doesn't copy it)
+RUN cp -f public/script.js dist/script.js 2>/dev/null || true
 
 # Stage 2: Serve the application with Nginx
 FROM nginx:alpine
