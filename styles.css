@@ -383,6 +383,45 @@ h3 {
 }
 
 
+/* ================= LANGUAGE SWITCHER ================= */
+.lang-switcher {
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    background: var(--bg-warm);
+    border-radius: 0.25rem;
+    border: 1px solid var(--border-main);
+}
+
+.lang-btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: transparent;
+    border-radius: 0.125rem;
+    transition: all var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.lang-btn:hover {
+    color: var(--primary);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.lang-btn.active {
+    background: var(--accent);
+    color: #FFFFFF;
+}
+
+.lang-switcher--mobile {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: var(--bg-section);
+}
+
+
 /* ================= HAMBURGER ================= */
 .hamburger {
     display: none;
