@@ -113,11 +113,26 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('language', lang);
         document.documentElement.setAttribute('lang', lang);
 
+        // Helper function to get nested translation value
+        function getTranslation(key) {
+            const keys = key.split('.');
+            let value = translations[lang];
+            for (const k of keys) {
+                if (value && value[k] !== undefined) {
+                    value = value[k];
+                } else {
+                    return null;
+                }
+            }
+            return value;
+        }
+
         // Update all elements with data-i18n
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (translations[lang] && translations[lang][key]) {
-                el.textContent = translations[lang][key];
+            const translation = getTranslation(key);
+            if (translation) {
+                el.textContent = translation;
             }
         });
 
