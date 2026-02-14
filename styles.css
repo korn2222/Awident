@@ -1,32 +1,32 @@
 /* ====================================================
    AWIDENT – Premium Editorial Dental Aesthetic
-   Warm cream · Deep teal · Burnished gold
+   Ivory paper · Dark navy · Green CTA
    DM Serif Display + Inter
    ==================================================== */
 
 :root {
-    /* Colors – warm, sophisticated palette */
-    --primary: #1A3C40;
-    --primary-medium: #2A5A5F;
-    --primary-light: #3D7A80;
-    --primary-pale: #E8F0F0;
-    --accent: #C8956C;
-    --accent-dark: #A87B55;
-    --accent-light: #D4AD8A;
-    --accent-pale: rgba(200, 149, 108, 0.10);
+    /* Colors – creamy background, navy blue accents */
+    --primary: #0C1A3A;
+    --primary-medium: #152D54;
+    --primary-light: #1B3A6B;
+    --primary-pale: #E6EAF2;
+    --accent: #1B3A6B;
+    --accent-dark: #0C1A3A;
+    --accent-light: #2C5090;
+    --accent-pale: rgba(27, 58, 107, 0.10);
 
-    --bg-cream: #FAFAF7;
-    --bg-warm: #F4F1EC;
-    --bg-section: #FFFFFF;
-    --bg-dark: #111A1C;
+    --bg-cream: #FDF8F0;
+    --bg-warm: #F5EDE0;
+    --bg-section: #FEFCF8;
+    --bg-dark: #0B1528;
 
-    --text-primary: #1A1A1A;
-    --text-secondary: #5A5A52;
-    --text-tertiary: #8A8A80;
-    --text-inverse: #F4F1EC;
+    --text-primary: #0C1A3A;
+    --text-secondary: #1B3A6B;
+    --text-tertiary: #4A6491;
+    --text-inverse: #FDF8F0;
 
-    --border-main: #E0DCD5;
-    --border-subtle: #EBE8E3;
+    --border-main: #E0D8C8;
+    --border-subtle: #EBE5D8;
     --border-accent: var(--accent);
 
     --star: #D4A017;
@@ -230,12 +230,12 @@ h3 {
 .btn--primary {
     background: var(--accent);
     color: #FFFFFF;
-    box-shadow: 0 2px 8px rgba(200, 149, 108, 0.25);
+    box-shadow: 0 2px 8px rgba(27, 58, 107, 0.25);
 }
 
 .btn--primary:hover {
     background: var(--accent-dark);
-    box-shadow: 0 4px 16px rgba(200, 149, 108, 0.35);
+    box-shadow: 0 4px 16px rgba(27, 58, 107, 0.35);
     transform: translateY(-1px);
 }
 
@@ -275,7 +275,7 @@ h3 {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(250, 250, 247, 0.95);
+    background: rgba(253, 248, 240, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-subtle);
@@ -1565,7 +1565,7 @@ h3 {
     transform: translateY(20px);
     transition: all var(--transition);
     z-index: 100;
-    box-shadow: 0 4px 12px rgba(200, 149, 108, 0.3);
+    box-shadow: 0 4px 12px rgba(27, 58, 107, 0.3);
 }
 
 .back-to-top.visible {
