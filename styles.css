@@ -1216,65 +1216,24 @@ h3 {
 }
 
 
-/* ================= CTA BANNER ================= */
-.cta-banner {
-    background: var(--primary);
-    padding: 4rem 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
 
-/* Decorative accent lines */
-.cta-banner::before,
-.cta-banner::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(200px, 25%);
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--accent-light), transparent);
-}
-
-.cta-banner::before {
-    top: 0;
-}
-
-.cta-banner::after {
-    bottom: 0;
-}
-
-.cta-banner h2 {
-    color: #FFFFFF;
-    margin-bottom: 1rem;
-}
-
-.cta-banner p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.0625rem;
-    margin-bottom: 2rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 /* ================= CONTACT ================= */
-.contact__inner {
+.contact__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
-.contact__form {
+.contact__cta {
     background: #FFFFFF;
     border: 1px solid var(--border-main);
     border-radius: var(--radius);
     padding: 2rem;
 }
 
-.contact__form h3 {
+.contact__cta h3 {
     font-size: 1.375rem;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
@@ -1419,17 +1378,27 @@ h3 {
     color: var(--accent-dark);
 }
 
+
+.contact__right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .contact__map {
     border-radius: var(--radius);
     overflow: hidden;
     border: 1px solid var(--border-main);
-    aspect-ratio: 16/9;
+    /* height controlled by iframe or inline styles now, or we can enforce here */
 }
 
 .contact__map iframe {
     width: 100%;
-    height: 100%;
+    height: 250px;
+    /* matched to inline style, or overridden here */
     border: 0;
+    display: block;
+    /* removes potential whitespace */
 }
 
 
@@ -1776,7 +1745,7 @@ h3 {
         max-width: 400px;
     }
 
-    .contact__inner {
+    .contact__grid {
         grid-template-columns: 1fr;
     }
 
@@ -1800,7 +1769,4 @@ h3 {
         right: 1rem;
     }
 
-    .cta-banner {
-        padding: 3rem 0;
-    }
 }
