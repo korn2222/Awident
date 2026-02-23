@@ -695,10 +695,8 @@ h3 {
 
 /* ================= ABOUT ================= */
 .about__inner {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
-    align-items: start;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .about__image {
@@ -1749,8 +1747,7 @@ h3 {
     }
 
     .about__inner {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        max-width: 100%;
     }
 
     .about__image {
