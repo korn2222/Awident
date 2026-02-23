@@ -105,22 +105,4 @@ document.addEventListener('DOMContentLoaded', () => {
         fadeEls.forEach(el => el.classList.add('visible'));
     }
 
-    // ---------- Mobile Phone Dropdown ----------
-    const phoneToggle = document.getElementById('mobile-phone-toggle');
-    const phoneDropdown = document.getElementById('mobile-phone-dropdown');
-
-    if (phoneToggle && phoneDropdown) {
-        phoneToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            phoneDropdown.classList.toggle('active');
-        });
-
-        // Close on outside click
-        document.addEventListener('click', (e) => {
-            if (!phoneDropdown.contains(e.target) && e.target !== phoneToggle) {
-                phoneDropdown.classList.remove('active');
-            }
-        });
-    }
-
 });

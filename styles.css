@@ -1624,6 +1624,10 @@ h3 {
     flex: 1;
 }
 
+.phone-toggle-check {
+    display: none;
+}
+
 .mobile-phone-dropdown {
     display: none;
     position: absolute;
@@ -1638,7 +1642,7 @@ h3 {
     z-index: 910;
 }
 
-.mobile-phone-dropdown.active {
+#phone-toggle-check:checked~.mobile-phone-dropdown {
     display: block;
     animation: dropdownSlideUp 0.25s var(--ease);
 }
