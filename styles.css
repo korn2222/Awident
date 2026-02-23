@@ -1781,6 +1781,10 @@ h3 {
         display: flex;
     }
 
+    body {
+        padding-bottom: 4.5rem;
+    }
+
     .header__inner {
         height: 68px;
     }
