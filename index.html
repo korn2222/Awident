@@ -73,12 +73,11 @@
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "19:00" },
         { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
       ],
-      "medicalSpecialty": ["Dentistry", "Orthodontics", "Prosthodontics", "OralSurgery"],
+      "medicalSpecialty": ["Dentistry", "Prosthodontics"],
       "availableService": [
         { "@type": "MedicalProcedure", "name": "Stomatologia zachowawcza", "description": "Leczenie próchnicy, rekonstrukcja koron zębów, endodoncja, profilaktyka" },
         { "@type": "MedicalProcedure", "name": "Protetyka stomatologiczna", "description": "Korony i mosty porcelanowe, wkłady koronowo-korzeniowe, protezy" },
-        { "@type": "MedicalProcedure", "name": "Ortodoncja", "description": "Aparaty stałe i zdejmowane dla dzieci i dorosłych" },
-        { "@type": "MedicalProcedure", "name": "Chirurgia stomatologiczna", "description": "Usuwanie zębów, ekstrakcje zębów zatrzymanych" },
+
         { "@type": "MedicalProcedure", "name": "Wybielanie zębów", "description": "Profesjonalne wybielanie zębów żywych i martwych" },
         { "@type": "MedicalProcedure", "name": "Profilaktyka stomatologiczna", "description": "Lakowanie, fluoryzacja, czyszczenie kamienia nazębnego" }
       ],
@@ -113,13 +112,22 @@
                 </ul>
             </nav>
             <div class="header__cta">
-                <a href="tel:+48603121530" class="header__phone">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path
-                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg>
-                    603 121 530
-                </a>
+                <div class="header__phones">
+                    <a href="tel:+48603121530" class="header__phone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span class="header__phone-name">Anna</span> 603 121 530
+                    </a>
+                    <a href="tel:+48697604522" class="header__phone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span class="header__phone-name">Iwona</span> 697 604 522
+                    </a>
+                </div>
                 <a href="https://bookero.pl" target="_blank" rel="noopener" class="btn btn--primary">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="3" y="4" width="18" height="18" rx="2" />
@@ -231,16 +239,7 @@
     <!-- ========== O NAS ========== -->
     <section class="section" id="o-nas">
         <div class="container about__inner fade-in">
-            <div class="about__image">
-                <div class="hero-placeholder">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
-                        style="width:80px;height:80px;color:rgba(30,136,229,0.3)">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                        <polyline points="9 22 9 12 15 12 15 22" />
-                    </svg>
-                </div>
-                <!-- TUTAJ WKLEJ ZDJĘCIE GABINETU: <img src="clinic.webp" alt="Wnętrze gabinetu Awident" loading="lazy"> -->
-            </div>
+
             <div class="about__content">
                 <span class="section-label">O naszym gabinecie</span>
                 <h2>Stomatolog Lubartów — gabinet Awident</h2>
@@ -387,60 +386,7 @@
                     </ul>
                 </div>
 
-                <!-- Ortodoncja -->
-                <div class="service-card fade-in">
-                    <div class="service-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" />
-                            <line x1="3" y1="12" x2="21" y2="12" />
-                            <line x1="9" y1="3" x2="9" y2="21" />
-                            <line x1="15" y1="3" x2="15" y2="21" />
-                        </svg>
-                    </div>
-                    <h3>Ortodoncja</h3>
-                    <p>Leczenie wad zgryzu u dzieci i dorosłych z zastosowaniem nowoczesnych
-                        aparatów.</p>
-                    <ul class="service-card__list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg><span>Aparaty stałe i zdejmowane dla dzieci</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg><span>Zamki metalowe, estetyczne, samoligaturujące</span>
-                        </li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg><span>Profilaktyka ortodontyczna dzieci</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg><span>Przygotowanie do leczenia protetycznego</span></li>
-                    </ul>
-                </div>
 
-                <!-- Chirurgia -->
-                <div class="service-card fade-in">
-                    <div class="service-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <line x1="12" y1="8" x2="12" y2="16" />
-                            <line x1="8" y1="12" x2="16" y2="12" />
-                        </svg>
-                    </div>
-                    <h3>Chirurgia stomatologiczna</h3>
-                    <p>Zabiegi chirurgiczne przeprowadzane w bezpiecznych i komfortowych
-                        warunkach.</p>
-                    <ul class="service-card__list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg><span>Usuwanie zębów</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg><span>Ekstrakcje zębów zatrzymanych</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg><span>Znieczulenie miejscowe</span></li>
-                    </ul>
-                </div>
 
                 <!-- Profilaktyka -->
                 <div class="service-card fade-in">
@@ -609,12 +555,7 @@
                         class="pricing__price">1 200 zł</span></div>
                 <div class="pricing__row"><span class="pricing__service">Licówka porcelanowa</span><span
                         class="pricing__price">1 500 zł</span></div>
-                <div class="pricing__row"><span class="pricing__service">Ekstrakcja zęba</span><span
-                        class="pricing__price">150 zł</span></div>
-                <div class="pricing__row"><span class="pricing__service">Konsultacja ortodontyczna</span><span
-                        class="pricing__price">150 zł</span></div>
-                <div class="pricing__row"><span class="pricing__service">Aparat ortodontyczny stały</span><span
-                        class="pricing__price">2 500 zł</span></div>
+
             </div>
             <p class="pricing__note">* Dokładny koszt leczenia ustalany jest indywidualnie po konsultacji. Powyższe ceny
                 mają charakter orientacyjny.</p>
@@ -765,13 +706,31 @@
 
     <!-- ========== MOBILE STICKY CTA ========== -->
     <div class="mobile-cta">
-        <a href="tel:+48603121530" class="mobile-cta__call">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg>
-            Zadzwoń
-        </a>
+        <div class="mobile-cta__call-wrapper">
+            <button class="mobile-cta__call" id="mobile-phone-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                Zadzwoń
+            </button>
+            <div class="mobile-phone-dropdown" id="mobile-phone-dropdown">
+                <a href="tel:+48603121530" class="mobile-phone-dropdown__item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span><strong>Anna</strong> 603 121 530</span>
+                </a>
+                <a href="tel:+48697604522" class="mobile-phone-dropdown__item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span><strong>Iwona</strong> 697 604 522</span>
+                </a>
+            </div>
+        </div>
         <a href="https://bookero.pl" target="_blank" rel="noopener" class="mobile-cta__book">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="4" width="18" height="18" rx="2" />
